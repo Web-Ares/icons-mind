@@ -1,0 +1,72 @@
+.social {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 30px;
+  font: 16px 'Proxima Nova Light', sans-serif;
+  text-transform: uppercase
+
+}
+.social__item {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-left: 21px;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/iocns-social.png) no-repeat;
+    background-size: auto 50px;
+    content: '';
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+}
+.social__item_mail {
+
+  &:after {
+    background-position: 0 0;
+  }
+
+}
+.social__item_btn {
+
+  &:after {
+    background-position: -29px 0;
+  }
+
+}
+.social__item_tw {
+
+  &:after {
+    background-position: -61px 0;
+  }
+
+}
+.social__item_fb {
+
+  &:after {
+    background-position: -94px 0;
+  }
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .social {
+    left: auto;
+    right: 45px;
+    bottom: 39px;
+  }
+
+}

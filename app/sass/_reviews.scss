@@ -1,0 +1,143 @@
+.reviews {
+  background: #f9593a;
+  padding: 60px 0;
+  text-align: center;
+}
+.reviews .swiper-button-next,
+.reviews .swiper-button-prev {
+  width: 12px;
+  height: 21px;
+  top: 56.3%;
+  background: none;
+  background-size: contain;
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    margin: -7px 0 0 -14px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    content: '';
+    transform: rotate(135deg);
+  }
+
+  &:hover {
+
+    &:after {
+      border-color: #000;
+    }
+
+  }
+
+}
+.reviews .swiper-button-prev {
+
+  &:after {
+    margin: -7px 0 0 -3px;
+    transform: rotate(-45deg);
+  }
+
+}
+.reviews__inner {
+  position: relative;
+  max-width: 1115px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.reviews__slider {
+  max-width: 890px;
+  margin: 0 auto;
+  padding: 63px 20px 0;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 32px;
+    height: 27px;
+    background: url("../img/quotes.png") no-repeat;
+    background-size: contain;
+    content: '';
+    transform: translateX(-50%);
+  }
+
+}
+.reviews__item {
+  color: #fff;
+}
+.reviews__text {
+  margin: 0 0 30px;
+  font-size: 20px;
+  line-height: 26px;
+  @include main-font2();
+}
+.reviews__person {
+
+}
+.reviews__avatar {
+  position: relative;
+  margin: 0 auto 23px;
+  width: 60px;
+  height: 60px;
+
+  &:after {
+    position: absolute;
+    z-index: 1;
+    top: -4px;
+    right: -22px;
+    width: 35px;
+    height: 35px;
+    background: url("../img/adoric-logo.png") no-repeat;
+    background-size: 35px;
+    content: '';
+  }
+
+  div {
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+}
+.reviews__name {
+  margin: 0 0 5px;
+  font-size: 14px;
+  line-height: 17px;
+  @include main-font2();
+  letter-spacing: 2px;
+}
+.reviews__post {
+  font-size: 14px;
+  line-height: 17px;
+  @include main-font3();
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+
+}
+@media (min-width: $tablet-landscape) {
+
+  .reviews {
+    padding: 164px 0 167px;
+  }
+  .reviews__text {
+    min-height: 172px;
+    margin: 0 0 53px;
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+}

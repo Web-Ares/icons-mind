@@ -1,0 +1,23 @@
+.sponsors {
+  background: #f4f4f4;
+  padding: 10px 0 5px;
+}
+.sponsors__inner {
+  max-width: 990px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  >div {
+    @include flexbox();
+    @include flex-wrap( wrap );
+    @include flex-direction();
+    @include align-items(center);
+    @include align-content(center);
+    @include justify-content(center);
+    margin: 0 -27px;
+  }
+}
+.sponsors__item {
+  margin: 15px 27px;
+  text-align: center;
+}

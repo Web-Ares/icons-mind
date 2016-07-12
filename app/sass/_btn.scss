@@ -1,0 +1,51 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  height: 42px;
+  min-width: 180px;
+  padding: 0 10px;
+  background: $btn-back;
+  border: 2px solid transparent;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 50px;
+  color: $btn-color;
+  @include main-font4();
+  -webkit-transition: opacity .3s ease, background-color .3s ease, color .3s ease, border-color .3s ease;
+  transition: opacity .3s ease, background-color .3s ease, color .3s ease, border-color .3s ease;
+
+  &:hover {
+    background: $btn-back-hover;
+    border-color: $btn-border-color-hover;
+  }
+
+  &:active {
+    color: $btn-color-active;
+    background: $btn-back-active;
+  }
+
+  span {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    height: 100%;
+  }
+
+}
+.btn_2 {
+  background: $btn-2-back;
+  color: $btn-2-color;
+  border-color: $btn-2-border-color;
+
+  &:hover {
+    background: $btn-2-back-hover;
+    color: $btn-2-color-hover;
+    border-color: $btn-2-border-color;
+  }
+
+  &:active {
+    border-color: $btn-2-border-color-active;
+    background: $btn-2-back-active;
+  }
+
+}

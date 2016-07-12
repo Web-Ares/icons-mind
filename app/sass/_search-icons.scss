@@ -1,0 +1,46 @@
+.search-icons {
+  background: #f3f3f3;
+  padding: 60px 0 0;
+  text-align: center;
+}
+.search-icons__inner {
+  max-width: 840px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.search-icons__mac {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 25px;
+  margin: 0 0 15px;
+  background: url("../img/ios3.png") no-repeat left top;
+  background-size: 16px 20px;
+  font-size: 22px;
+  line-height: 25px;
+  color: #666666;
+  @include main-font3();
+}
+.search-icons__pic {
+  max-width: 742px;
+  margin: 60px auto 0;
+  box-shadow: 0 0 80px 3px rgba(0,0,0,0.05);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .search-icons {
+    padding: 99px 0 0;
+  }
+  .search-icons__pic {
+    margin: 97px auto 0;
+
+  }
+
+}

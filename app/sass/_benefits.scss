@@ -1,0 +1,157 @@
+.benefits {
+  background: #f4f4f4;
+  padding: 60px 0;
+  text-align: left;
+}
+.benefits__inner {
+  max-width: 820px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.benefits__list {
+  @include flexbox();
+  @include flex-wrap( wrap );
+  @include flex-direction();
+  @include align-items(flex-start);
+  margin: 0 0 40px;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 13px;
+    margin: 0 0 20px;
+    color: #000000;
+    @include main-font3();
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+
+    span {
+      white-space: pre-line;
+    }
+  }
+
+}
+.benefits__pic {
+  position: relative;
+  margin: 0 auto 7px;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background: #fff;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+}
+.benefits__platform {
+  margin: 0 0 30px;
+  font-size: 16px;
+  line-height: 19px;
+
+  dl {
+    padding: 0 0 0 46px;
+
+    dt {
+      margin: 0 0 9px;
+      @include main-font4();
+    }
+
+    dd {
+      margin: 0 0 27px;
+      @include main-font3();
+
+      &:last-child {
+        margin: 0 0 19px;
+      }
+
+    }
+
+  }
+
+  .benefits__no-compromises {
+
+    dt {
+      margin: 0;
+    }
+
+    dd {
+      margin: 0 0 20px;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+  }
+
+  .btn {
+    min-width: 160px;
+    margin: 0 0 0 40px;
+  }
+
+}
+.benefits__title {
+  padding: 0 0 0 38px;
+  margin: 0 0 18px;
+  font-size: 37px;
+  line-height: 42px;
+  @include main-font4();
+}
+.benefits__title_ios {
+  background: url("../img/ios.png") no-repeat left 3px;
+  background-size: 24px 28px;
+}
+.benefits__title_android {
+  background: url("../img/android.png") no-repeat left top;
+  background-size: 21px 25px;
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .benefits__list {
+
+    li {
+      width: 25%;
+    }
+
+  }
+  .benefits__platforms {
+    @include flexbox();
+    @include flex-wrap( wrap );
+    @include flex-direction();
+    @include align-items(flex-start);
+    @include justify-content(space-between)
+  }
+  .benefits__platform {
+    margin: 0;
+    width: 46%;
+  }
+
+}
+@media (min-width: $tablet-landscape) {
+
+  .benefits {
+    padding: 109px 0 123px;
+    text-align: left;
+  }
+  .benefits__list {
+    margin: 0 0 81px;
+
+    li {
+      width: 20%;
+      font-size: 17px;
+      line-height: 21px;
+    }
+
+  }
+  .benefits__pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+
+}

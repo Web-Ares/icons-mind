@@ -1,0 +1,357 @@
+.site {
+  position: relative;
+  overflow: hidden;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  @include main-font1();
+  color: #000001;
+
+  &:after {
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 70px;
+    content: '';
+  }
+
+}
+.site__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  height: 73px;
+  margin: 0 auto;
+  border-bottom: 1px solid transparent;
+  font-size: 12px;
+  text-align: right;
+  background-color: #f9593a;
+  transition: border-bottom .2s ease, padding-top .2s ease, background-color .3s ease, transform .3s ease, height .3s ease;
+  -webkit-transition: border-bottom .2s ease, padding-top .2s ease, background-color .3s ease, transform .3s ease, height .3s ease;
+
+  &.white {
+    border-bottom-color: #e8e8e8;
+    background-color: #fff;
+
+    .site__header__mobile-item {
+      color: #555
+    }
+
+    .site__header__item {
+      color: #555
+    }
+
+    .site__header__menu-btn {
+
+      span {
+
+        &:before,
+        &:after{
+          background-color: #555
+        }
+
+      }
+
+    }
+
+  }
+
+  &.site__header_drop-menu {
+
+    .site__header__mobile-item {
+      color: #fff
+    }
+
+  }
+
+  &.site__header_inner {
+
+    .site__header__mobile-item {
+      display: none
+    }
+
+  }
+
+  &.site__header_hidden {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+  }
+
+  &.site__header_drop-menu {
+
+    .site__header__menu-btn {
+
+      span {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+        &:before {
+          opacity: 0
+        }
+        &:after {
+          top: 0;
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg)
+        }
+
+      }
+
+    }
+
+    &.white {
+
+      .site__header__menu-btn {
+
+        span {
+          background-color: #fff;
+
+          &:after {
+            background-color: #fff
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+.site__header__layout {
+  position: relative;
+  max-width: 1504px;
+  margin: 0 auto;
+  padding: 45px 45px 0 10px;
+}
+.site__header__item {
+  display: none;
+  margin-right: 19px;
+  padding-top: 6px;
+  font-size: 18px;
+  color: #fff;
+  @include main-font4();
+  -webkit-transition: opacity .3s ease, color .3s ease;
+  transition: opacity .3s ease, color .3s ease;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+}
+.site__header__mobile-item {
+  position: absolute;
+  top: 29px;
+  left: 10px;
+  z-index: 7;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  -webkit-transition: color .3s ease, opacity .3s ease;
+  transition: color .3s ease, opacity .3s ease;
+
+  &:hover {
+    opacity: .8
+  }
+
+}
+.site__header__menu-btn {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  width: 30px;
+  height: 25px;
+  z-index: 6;
+  overflow: hidden;
+  text-indent: 999px;
+
+  &:hover {
+
+    span {
+
+      background-color: rgba(255, 255, 255, 0.6);
+
+      &:before,
+      &:after {
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+
+    }
+
+  }
+
+  span {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #fff;
+    -webkit-transition: background-color .3s ease, top .3s ease, transform .3s ease;
+    transition: background-color .3s ease, top .3s ease, transform .3s ease;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: #fff;
+      transition: background-color .3s ease, top .3s ease, transform .3s ease;
+      -webkit-transition: background-color .3s ease, top .3s ease, transform .3s ease;
+      content: '';
+    }
+
+    &:before {
+      top: -10px
+    }
+
+  }
+
+}
+.site__footer {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+}
+.site__footer-layout {
+  @include flexbox();
+  @include flex-wrap( wrap );
+  @include flex-direction();
+  @include align-items(center);
+  @include justify-content(center);
+  position: relative;
+  max-width: 800px;
+  height: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  @include main-font3();
+}
+.site__content {
+
+}
+.site__title {
+  margin: 0 0 20px;
+  @include main-font2();
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  span {
+    display: block;
+  }
+}
+.site__title_2 {
+  margin: 0 0 20px;
+  color: #000001;
+  font-size: 25px;
+  line-height: 30px;
+}
+.site__title_3 {
+
+}
+.site__subtitle {
+  font-size: 16px;
+  line-height: 21px;
+}
+.site__info {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+
+  strong {
+    @include main-font4();
+  }
+
+}
+.site__info_small {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@media (min-width: $phone-landscape) {
+  .site {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .site {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .site {
+    font-size: 16px;
+    line-height: 19px;
+
+    &:after {
+      height: 140px;
+    }
+
+  }
+  .site__header {
+    height: 122px;
+  }
+  .site__header__mobile-item {
+    display: none
+  }
+  .site__header__item {
+    display: inline-block;
+    margin-right: 34px;
+    padding-top: 8px;
+    font-size: 18px
+  }
+  .site__header__menu-btn {
+    top: 48px;
+  }
+  .site__footer {
+    height: 140px;
+  }
+  .site__title {
+    margin: 0 0 17px;
+    font-size: 60px;
+    line-height: 64px;
+  }
+  .site__title_2 {
+    margin: 0 0 31px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .site__title_3 {
+    margin: 0 0 83px;
+    font-size: 72px;
+    line-height: 75px;
+  }
+  .site__subtitle {
+    font-size: 26px;
+    line-height: 47px;
+  }
+  .site__info {
+    margin: 0 auto 41px;
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .site__info_small {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+@media (min-width: $desktop) {
+  .site {
+
+  }
+}
+
