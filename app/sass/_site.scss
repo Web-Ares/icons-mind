@@ -17,6 +17,20 @@
   }
 
 }
+.site_inner {
+
+  .site__header {
+    background-color: #000001;
+  }
+
+}
+.site_no-footer {
+
+  &:after {
+    display: none;
+  }
+
+}
 .site__header {
   position: fixed;
   top: 0;
@@ -261,6 +275,9 @@
 .site__title_3 {
 
 }
+.site__title_4 {
+  margin: 0;
+}
 .site__subtitle {
   font-size: 16px;
   line-height: 21px;
@@ -280,6 +297,9 @@
 .site__info_small {
   font-size: 14px;
   line-height: 19px;
+}
+.site__center {
+  padding: 40px 10px;
 }
 
 @media (min-width: $phone-landscape) {
@@ -335,6 +355,11 @@
     font-size: 72px;
     line-height: 75px;
   }
+  .site__title_4 {
+    margin: 0;
+    font-size: 66px;
+    line-height: 70px;
+  }
   .site__subtitle {
     font-size: 26px;
     line-height: 47px;
@@ -347,6 +372,9 @@
   .site__info_small {
     font-size: 24px;
     line-height: 29px;
+  }
+  .site__center {
+    padding: 72px 10px;
   }
 }
 @media (min-width: $desktop) {

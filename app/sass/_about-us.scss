@@ -1,0 +1,33 @@
+.about-us {
+
+
+}
+.about-us__members-comment {
+  padding: 45px 0 0;
+}
+.about-us__member {
+  margin: 0 0 30px;
+}
+.about-us__member-post {
+  display: block;
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 17px;
+  @include main-font4();
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .about-us__members-comment {
+    padding: 66px 0 0;
+  }
+  .about-us__member-post {
+    margin: 0 0 26px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .about-us__member {
+    margin: 0 0 58px;
+  }
+
+}
