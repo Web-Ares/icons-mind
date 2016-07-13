@@ -39,10 +39,32 @@
     display: block;
     width: 100%;
     height: auto;
-    margin: 0 20px;
+    margin: 20px 0;
   }
   p {
     margin: 0 0 20px;
+  }
+  em {
+    display: block;
+    position: relative;
+    margin: 30px 0;
+    padding-left: 32px;
+    padding-right: 30px;
+    font-size: 19px;
+    line-height: 25px;
+    color: #1565c0;
+    font-style: normal;
+
+    &:before {
+      position: absolute;
+      top: 6px;
+      bottom: 10px;
+      left: 0;
+      width: 5px;
+      background-color: #1565c0;
+      content: '';
+    }
+
   }
 
 }
@@ -69,20 +91,23 @@
       height: auto;
     }
     .alignleft {
-      margin: 20px 20px 35px 0;
+      margin: 20px 20px 45px 0;
       float: left;
     }
     .aligncenter {
       display: block;
-      margin: 20px auto 35px;
+      margin: 20px auto 45px;
     }
     .alignright {
-      margin: 20px 0 35px 20px;
+      margin: 20px 0 45px 20px;
       float: right;
     }
     .alignnone {
       width: 100%;
-      margin: 35px 0;
+      margin: 46px 0 77px;
+    }
+    em {
+      margin: 63px 0;
     }
 
   }
@@ -121,6 +146,11 @@
     }
     p {
       margin: 0 0 30px;
+    }
+    em {
+      margin-bottom: 97px;
+      font-size: 30px;
+      line-height: 40px;
     }
 
   }

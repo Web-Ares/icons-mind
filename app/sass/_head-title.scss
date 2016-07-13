@@ -1,27 +1,78 @@
 .head-title {
-  @include flexbox();
-  @include flex-wrap( wrap );
-  @include flex-direction();
-  @include align-items(center);
-  @include justify-content(center);
   position: relative;
   padding: 90px 0 50px;
   background: #000001;
 }
+.site_purple .head-title {
+  background-color: #78379d;
+}
 .head-title__inner {
   position: relative;
+  width: 100%;
   max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
+  text-align: center;
+}
+.head-title__author {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 40px 0 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255,255,255,0.7);
+  text-align: left;
+}
+.head-title__author__ava {
+  opacity: 0.7;
+  float: left;
+  width: 49px;
+  height: 49px;
+  margin-right: 11px;
 
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}
+.head-title__author__content {
+  overflow: hidden;
+  padding-top: 8px;
+
+  time {
+    display: block;
+    margin: 2px 0 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
 
 }
 
 @media (min-width: $tablet-landscape) {
 
   .head-title {
-    padding: 122px 0;
+    @include flexbox();
+    @include flex-wrap( wrap );
+    @include flex-direction();
+    @include align-items(stretch);
+    @include justify-content(center);
+    padding: 92px 0;
     min-height: 400px;
+  }
+  .head-title__inner {
+    @include flexbox();
+    @include flex-wrap( wrap );
+    @include flex-direction();
+    @include align-items(center);
+    @include justify-content(center);
+  }
+  .head-title__author {
+    position: absolute;
+    left: 11px;
+    bottom: -48px;
   }
 
 }

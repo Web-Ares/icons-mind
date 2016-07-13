@@ -1,0 +1,34 @@
+.comments {
+  margin: 0 0 40px;
+  color: #000;
+
+  .comments__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 26px;
+    @include main-font4();
+  }
+
+}
+
+
+@media (min-width: $tablet-portrait) {
+
+  .comments {
+
+    .comments__title {
+      margin-bottom: 32px;
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+  }
+
+}
+@media (min-width: $tablet-landscape) {
+
+  .comments {
+    margin: 0 auto 95px;
+  }
+
+}

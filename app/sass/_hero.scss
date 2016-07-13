@@ -118,6 +118,7 @@
     border-radius: 100px;
 
     &:after {
+      left: 41%;
       border: 13px solid transparent;
       border-left: 22px solid #fff;
     }
@@ -148,6 +149,13 @@
     width: 50px;
     height: 50px;
     border-radius: 50px;
+
+    &:after {
+      left: 37%;
+      border: 10px solid transparent;
+      border-left: 15px solid #fff;
+    }
+
   }
   .hero__icons {
     max-width: 450px;

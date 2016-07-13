@@ -17,12 +17,11 @@
   }
 
 }
-.site_inner {
-
-  .site__header {
-    background-color: #000001;
-  }
-
+.site_black .site__header {
+  background-color: #000;
+}
+.site_purple .site__header {
+  background-color: #78379d;
 }
 .site_no-footer {
 
@@ -133,6 +132,9 @@
     }
 
   }
+
+}
+.site__header_black {
 
 }
 .site__header__layout {
@@ -278,6 +280,9 @@
 .site__title_4 {
   margin: 0;
 }
+.site__title_5 {
+  margin: 0;
+}
 .site__subtitle {
   font-size: 16px;
   line-height: 21px;
@@ -299,6 +304,9 @@
   line-height: 19px;
 }
 .site__center {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
   padding: 40px 10px;
 }
 
@@ -359,6 +367,11 @@
     margin: 0;
     font-size: 66px;
     line-height: 70px;
+  }
+  .site__title_5 {
+    margin: 0 0 38px;
+    font-size: 40px;
+    line-height: 48px;
   }
   .site__subtitle {
     font-size: 26px;

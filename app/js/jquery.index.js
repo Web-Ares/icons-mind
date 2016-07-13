@@ -73,8 +73,7 @@
                     slidesPerView: 1,
                     paginationClickable: true,
                     spaceBetween: 30,
-                    loop: true,
-                    autoHeight: true
+                    loop: true
                 } );
             },
             _init = function() {

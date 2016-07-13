@@ -15,7 +15,27 @@
   }
 
 }
+.logo__title {
+  display: none;
+}
 
+@media (min-width: $tablet-portrait) {
+
+  .logo__title {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: 0 -10px 0 0;
+    font-size: 22px;
+    line-height: 22px;
+    color: rgba(255,255,255,0.5);
+    @include main-font3();
+    -webkit-transform: translate(100%, -50%);
+    transform: translate(100%, -50%);
+  }
+
+}
 @media (min-width: $tablet-landscape) {
 
   .logo {

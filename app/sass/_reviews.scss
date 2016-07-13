@@ -69,6 +69,8 @@
   color: #fff;
 }
 .reviews__text {
+  height: 210px;
+  overflow: hidden;
   margin: 0 0 30px;
   font-size: 20px;
   line-height: 26px;
@@ -134,7 +136,7 @@
     padding: 164px 0 167px;
   }
   .reviews__text {
-    min-height: 172px;
+    height: 172px;
     margin: 0 0 53px;
     font-size: 36px;
     line-height: 43px;

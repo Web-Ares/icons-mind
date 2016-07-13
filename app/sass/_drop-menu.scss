@@ -14,12 +14,16 @@
   -webkit-transition: opacity .3s ease, visibility .3s ease;
   transition: opacity .3s ease, visibility .3s ease
 }
-
+.site_black .drop-menu {
+  background-color: #000;
+}
+.site_purple .drop-menu {
+  background-color: #78379d;
+}
 .site__header_drop-menu .drop-menu {
   opacity: 1;
   visibility: visible
 }
-
 .drop-menu__inner {
   position: relative;
   max-width: 300px;
@@ -27,7 +31,6 @@
   margin: 0 auto;
   padding: 80px 15px
 }
-
 .drop-menu__inner-wrap {
   overflow: hidden;
   position: relative;
@@ -53,7 +56,6 @@
   line-height: 33px;
   @include main-font4();
 }
-
 .drop-menu__menu-item {
   color: #fff;
   -webkit-transition: color .3s ease;
@@ -64,13 +66,11 @@
   }
 
 }
-
 .drop-menu__navigation {
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 33px
 }
-
 .drop-menu__navigation-item {
   color: #fff;
   -webkit-transition: color .3s ease;
@@ -81,14 +81,11 @@
   }
 
 }
-
-
 .drop-menu__legally {
   font-size: 14px;
   line-height: 34px;
   @include main-font3();
 }
-
 .drop-menu__legally-item {
   color: #fff;
   transition: color .3s ease;

@@ -17,6 +17,8 @@
             _menuContent = _obj.find( '#scroll-wrap' ),
             _action = false,
             _lastPos,
+            siteScrollTop,
+            _site = $('.site'),
             _dom = $( 'html' ),
             _window = $( window );
 
@@ -29,6 +31,12 @@
 
                             _header.removeClass( 'site__header_drop-menu' );
 
+                            _site.css( {
+                                'height': ''
+                            } );
+
+                            _window.scrollTop( siteScrollTop );
+
                             _dom.css( {
                                 'overflow-y': ''
                             } );
@@ -39,18 +47,29 @@
 
                             _header.addClass( 'site__header_drop-menu' );
 
-                            _dom.css( {
-                                'overflow-y': 'hidden'
-                            } );
-
-                            _initContentScroll();
+                            siteScrollTop = _window.scrollTop();
 
                             setTimeout( function() {
 
-                                $( _menuContent ).getNiceScroll().show();
-                                $( _menuContent ).getNiceScroll().resize();
+                                _site.css( {
+                                    'height': '100%'
+                                } );
+
+                                _dom.css( {
+                                    'overflow-y': 'scroll'
+                                } );
+
+                                _initContentScroll();
+
+                                setTimeout( function() {
+
+                                    $( _menuContent ).getNiceScroll().show();
+                                    $( _menuContent ).getNiceScroll().resize();
+
+                                }, 300);
 
                             }, 300);
+
 
                         }
 
@@ -60,7 +79,6 @@
                 } );
                 _window.on( {
                     'scroll': function () {
-
                         _action = _window.scrollTop() >= _header.innerHeight();
 
                     },
@@ -141,7 +159,7 @@
             },
             _checkScroll = function( direction ) {
 
-                if( direction > 0 && !_header.hasClass( 'site__header_hidden' ) && _action ) {
+                if( direction > 0 && !_header.hasClass( 'site__header_hidden' ) && _action && !_header.hasClass( 'site__header_drop-menu' ) ) {
                     _header.addClass( 'site__header_hidden' );
                 }
 
