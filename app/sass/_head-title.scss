@@ -50,6 +50,33 @@
   }
 
 }
+.head-title__subtitle {
+  display: block;
+  max-width: 840px;
+  margin: 3px auto 6px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #999999;
+
+  span {
+    display: block;
+  }
+
+}
+.head-title__back-money {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 19px 5px 33px;
+  border-radius: 24px;
+  margin: 45px 0 20px;
+  height: 24px;
+  color: #000001;
+  font-size: 16px;
+  line-height: 16px;
+  @include main-font2();
+  background: url("../img/flag1.png") no-repeat 12px center #fff;
+  background-size: 12px 14px;
+}
 
 @media (min-width: $tablet-landscape) {
 
@@ -62,10 +89,13 @@
     padding: 92px 0;
     min-height: 400px;
   }
+  .head-title_2 {
+    min-height: 500px;
+  }
   .head-title__inner {
     @include flexbox();
     @include flex-wrap( wrap );
-    @include flex-direction();
+    @include flex-direction(column);
     @include align-items(center);
     @include justify-content(center);
   }
@@ -73,6 +103,10 @@
     position: absolute;
     left: 11px;
     bottom: -48px;
+  }
+  .head-title__subtitle {
+    font-size: 28px;
+    line-height: 38px;
   }
 
 }

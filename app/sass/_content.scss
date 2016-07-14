@@ -43,6 +43,22 @@
   }
   p {
     margin: 0 0 20px;
+
+    i {
+      display: block;
+      @include main-font4();
+      font-style: italic;
+    }
+    a {
+      color: #000;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
   }
   em {
     display: block;

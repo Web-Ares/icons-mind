@@ -49,3 +49,22 @@
   }
 
 }
+.btn_2-1 {
+  min-width: 160px;
+  margin-top: 43px;
+}
+.btn_3 {
+  height: 47px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@media (min-width: $tablet-portrait) {
+  .btn_3 {
+    min-width: 1px;
+    width: 29%;
+    margin: 0 0 0 -6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

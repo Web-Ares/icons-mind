@@ -6,7 +6,7 @@
   @include align-items(flex-end);
   @include justify-content(center);
   position: relative;
-  padding-top: 122px;
+  padding-top: 119px;
   background: #f9593a;
   min-height: 500px;
   color: #fff;
@@ -14,6 +14,7 @@
   font-size: 16px;
   line-height: 26px;
   @include main-font3();
+
 }
 .hero__inner {
   @include flexbox();
@@ -28,7 +29,13 @@
   height: 100%;
   max-width: 960px;
   padding: 0 10px;
-  letter-spacing: -1px;
+
+  p {
+    max-width: 642px;
+    margin: 0 auto;
+    letter-spacing: -0.1px;
+  }
+
 }
 .hero__video {
   position: absolute;
@@ -53,7 +60,7 @@
 .hero__new-version {
   display: inline-block;
   vertical-align: top;
-  padding: 4px 19px 4px 33px;
+  padding: 5px 14px 5px 29px;
   border-radius: 24px;
   margin: 0 0 20px;
   height: 24px;
@@ -62,6 +69,7 @@
   @include main-font2();
   background: url("../img/flag.png") no-repeat 12px center #8f75be;
   background-size: 12px 14px;
+  letter-spacing: -0.3px;
 }
 .hero__play {
   display: inline-block;
@@ -100,6 +108,7 @@
   }
   .hero__inner {
     max-height: 88.3%;
+    letter-spacing: -1.6px;
   }
   .hero__icons {
     max-width: 671px;

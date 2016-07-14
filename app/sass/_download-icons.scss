@@ -1,0 +1,54 @@
+.download-icons {
+  padding: 30px 10px;
+  margin-bottom: 40px;
+  background: #f7f7f7;
+  text-align: center;
+}
+.download-icons__title {
+  display: block;
+  margin-bottom: 33px;
+  font-size: 17px;
+  line-height: 22px;
+  color: #aeaeae;
+}
+.download-icons input {
+  width: 100%;
+  height: 47px;
+  margin-bottom: 20px;
+  border: 2px solid #e8e8e8;
+  padding: 14px 20px;
+  border-radius: 47px;
+  color: #aeaeae;
+  font-size: 14px;
+  line-height: 14px;
+  @include main-font1();
+  -webkit-transition: border-color .3s ease;
+  transition: border-color .3s ease;
+
+  &:focus {
+    border-color: #aeaeae;
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .download-icons {
+    padding: 38px 41px 47px;
+  }
+  .download-icons input {
+    width: 69%;
+    margin-bottom: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+}
+@media (min-width: $tablet-landscape) {
+
+  .download-icons {
+    max-width: 528px;
+    margin: 0 auto 52px;
+  }
+
+}

@@ -1,0 +1,32 @@
+.packages {
+
+
+}
+.packages__items {
+
+}
+.packages__item {
+
+}
+.packages__price {
+  padding-right: 19px;
+  margin-bottom: 10px;
+  font-size: 64px;
+  line-height: 64px;
+  @include main-font2();
+
+  span {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+@media (min-width: $tablet-landscape) {
+
+
+}

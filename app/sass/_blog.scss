@@ -26,7 +26,7 @@
       left: 0;
       @include main-font4();
       counter-increment: list;
-      content: "0"counter(list) ;
+      content: "0"counter(list)'.' ;
     }
 
     a {
