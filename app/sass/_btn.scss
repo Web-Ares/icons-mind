@@ -58,6 +58,61 @@
   font-size: 14px;
   line-height: 14px;
 }
+.btn_4 {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  min-width: 136px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.btn_5 {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 39px;
+  height: 50px;
+}
+.btn_6 {
+  min-width: 216px;
+}
+.btn_7 {
+  margin: 0 0 20px;
+  min-width: 246px;
+}
+.btn_8 {
+  margin: 0 0 30px;
+  min-width: 246px;
+  border-color: $btn-border-color-hover;
+  background: transparent;
+
+  &:hover {
+    background: $btn-back;
+    border-color: $btn-border-color-hover;
+  }
+
+  &:active {
+    color: $btn-color-active;
+    background: $btn-back-active;
+  }
+
+}
+.btn_9 {
+  min-width: 122px;
+  margin: -5px 35px 0 0;
+  border-color: $btn-border-color-hover;
+  background: transparent;
+  font-size: 16px;
+  line-height: 16px;
+
+  &:hover {
+    background: $btn-back;
+    border-color: $btn-border-color-hover;
+  }
+  &:active {
+    color: $btn-color-active;
+    background: $btn-back-active;
+  }
+}
 
 @media (min-width: $tablet-portrait) {
   .btn_3 {
@@ -66,5 +121,13 @@
     margin: 0 0 0 -6px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+  .btn_4 {
+    bottom: 66px;
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .btn_8 {
+    margin: 0 0 101px;
   }
 }

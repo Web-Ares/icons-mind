@@ -19,6 +19,11 @@
   font-weight: 400;
   font-style: normal;
 }
+@mixin main-font5() {
+  font-family: "myriadpro-bold", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 @mixin justify() {
   text-align: justify;

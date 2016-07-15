@@ -101,6 +101,27 @@
   }
 
 }
+.social-networks_2 {
+  margin: 33px 0 0;
+  text-align: left;
+}
+.social-networks_2 .social-networks__item {
+  margin: 0 0 0 6px;
+  width: 26px;
+  height: 26px;
+  border: none;
+  opacity: 1;
+  background: #cbcbcb;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+}
 .social-blog {
   margin: 20px 0 0;
   text-align: center;
@@ -163,6 +184,12 @@
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+  .social-networks_2 {
+    position: relative;
+    margin: 33px 0 0;
+    right: auto;
+    bottom: auto;
   }
   .social-blog {
     position: absolute;

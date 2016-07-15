@@ -14,7 +14,8 @@
   -webkit-transition: opacity .3s ease, visibility .3s ease;
   transition: opacity .3s ease, visibility .3s ease
 }
-.site_black .drop-menu {
+.site_black .drop-menu,
+.site_white .drop-menu {
   background-color: #000;
 }
 .site_purple .drop-menu {
@@ -61,6 +62,7 @@
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
 
+  &.active,
   &:hover {
     color: rgba(255, 255, 255, 0.5);
   }
@@ -76,6 +78,7 @@
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
 
+  &.active,
   &:hover {
     color: rgba(255, 255, 255, 0.5);
   }
@@ -91,6 +94,7 @@
   transition: color .3s ease;
   -webkit-transition: color .3s ease;
 
+  &.active,
   &:hover {
     color: rgba(255, 255, 255, 0.5);
   }

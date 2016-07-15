@@ -2,6 +2,11 @@
   position: relative;
   padding: 90px 0 50px;
   background: #000001;
+
+  .site__title {
+    max-width: 600px;
+  }
+
 }
 .site_purple .head-title {
   background-color: #78379d;
@@ -66,7 +71,7 @@
 .head-title__back-money {
   display: inline-block;
   vertical-align: top;
-  padding: 5px 19px 5px 33px;
+  padding: 5px 10px 5px 33px;
   border-radius: 24px;
   margin: 45px 0 20px;
   height: 24px;

@@ -1,0 +1,142 @@
+.contact-us {
+  max-width: 422px;
+  margin: 0 auto;
+}
+.contact-us__form {
+  position: relative;
+  margin-bottom: 30px;
+}
+.contact-us__form fieldset {
+  position: relative;
+  margin-bottom: 21px;
+  border-bottom: 2px solid #e8e8e8;
+  -webkit-transition: border-bottom-color .3s ease;
+  transition: border-bottom-color .3s ease;
+}
+.contact-us__form input,
+.contact-us__form textarea {
+  display: block;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 14px;
+  padding: 4px 0;
+  padding-left: 60px;
+  border: none;
+  font-size: 17px;
+  line-height: 17px;
+  @include main-font1();
+}
+.contact-us__form__name {
+  background: url("../img/icons-persona.png") no-repeat 11px 50%;
+  background-size: 24px 24px;
+}
+.contact-us__form__email {
+  background: url("../img/download_image.png") no-repeat 11px 0;
+  background-size: 24px 18px;
+}
+.message-field__text {
+  position: absolute;
+  top: 0;
+}
+.message-field__height,
+.message-field__text {
+  overflow: hidden;
+  opacity: 0;
+  z-index: -1;
+  width: 100%;
+  min-height: 25px;
+  margin-bottom: 14px;
+  padding-left: 60px;
+  font-size: 17px;
+  line-height: 17px;
+  @include main-font1();
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  -webkit-transition: height .3s ease;
+  transition: height .3s ease;
+
+}
+.contact-us__form__message {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 25px;
+  background: url("../img/icons-message.png") no-repeat 10px 0;
+  background-size: 22px 21px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  -webkit-transition: height .3s ease;
+  transition: height .3s ease;
+}
+.contact-us__address {
+  padding: 0 0 0 8px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9fa3a7;
+  @include main-font4();
+
+  address {
+    margin: 0 0 31px;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000001;
+    @include main-font3();
+
+    span {
+      display: block;
+      margin: 14px 0 13px;
+      font-size: 10px;
+      line-height: 14px;
+      color: #9fa3a7;
+      text-transform: uppercase;
+      @include main-font4();
+    }
+    a {
+      color: #000001;
+    }
+
+  }
+
+}
+.contact-us__logo {
+  width: 186px;
+  height: 43px;
+  margin: 0 0 33px -8px;
+
+  svg,
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .contact-us {
+    max-width: 100%;
+    padding-top: 16px;
+
+    .site__center {
+      @include flexbox();
+      @include flex-wrap( wrap );
+      @include flex-direction();
+      @include align-items(stretch);
+      @include justify-content(space-between)
+    }
+
+  }
+  .contact-us__form {
+    width: 52.5%;
+    margin-bottom: 0;
+  }
+  .contact-us__address {
+    width: 34%;
+    padding-top: 11px;
+  }
+
+}

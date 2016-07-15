@@ -3,30 +3,205 @@
 
 }
 .packages__items {
-
+  overflow: hidden;
+  margin: 0 0 30px;
+  border: 1px solid #e8e9ed;
+  border-radius: 4px;
 }
 .packages__item {
+  position: relative;
+  padding: 30px 15px 80px;
+  background: #fff;
+  text-align: center;
+  border-top: 1px solid #e8e9ed;
 
-}
-.packages__price {
-  padding-right: 19px;
-  margin-bottom: 10px;
-  font-size: 64px;
-  line-height: 64px;
-  @include main-font2();
-
-  span {
-    font-size: 50px;
-    line-height: 50px;
+  &:first-child {
+    border-top: none;
   }
 
+}
+.packages__item_premium {
+  background: #f5f5f5;
+}
+.packages__title {
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 18px;
+  @include main-font5();
+  color: #999999;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.packages__title-popular {
+  display: inline-block;
+  vertical-align: top;
+  padding: 4px 8px;
+  background: #8f75be;
+  color: #fff;
+  font-size: 8px;
+  line-height: 8px;
+  border-radius: 3px;
+}
+.packages__price {
+  margin-bottom: 13px;
+  font-size: 44px;
+  line-height: 44px;
+  @include main-font5();
+
+  span {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+}
+.packages__text {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 250px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+
+  dl {
+    margin: 0 0 6px;
+    min-height: 15px;
+    padding: 0 0 0 27px;
+    background: url("../img/icoin-check.png") no-repeat left 2px;
+    background-size: 16px 13px;
+
+    dt {
+      display: inline-block;
+      vertical-align: top;
+    }
+    dd {
+      display: inline;
+      @include main-font3();
+    }
+  }
+
+}
+.packages__payments {
+  margin: 0 0 50px;
+  text-align: center;
+
+  span {
+    display: block;
+    margin: 0 0 11px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+  }
+}
+.packages__include-title {
+  margin: 0 0 25px;
+  padding: 0 0 0 90px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  @include main-font2();
+}
+.packages__include-items {
+  min-height: 60px;
+  margin: 0 0 37px;
+  padding: 0 0 0 70px;
+  font-size: 14px;
+  line-height: 25px;
+
+  p {
+    a {
+      color: #000000;
+      text-decoration: underline;
+      @include main-font4();
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+  }
+  &:nth-child(1) {
+    background: url("../img/include-bg1.png") no-repeat 1px 4px;
+    background-size: 48px 53px;
+  }
+  &:nth-child(2) {
+    background: url("../img/include-bg2.png") no-repeat 1px 4px;
+    background-size: 48px;
+  }
+  &:nth-child(3) {
+    background: url("../img/include-bg3.png") no-repeat 0 5px;
+    background-size: 54px 56px;
+  }
+  &:nth-child(4) {
+    background: url("../img/include-bg4.png") no-repeat 2px 8px;
+    background-size: 44px 48px;
+  }
+  &:nth-child(5) {
+    background: url("../img/include-bg5.png") no-repeat 0 10px;
+    background-size: 40px 48px;
+  }
+
+}
+.packages__include-items-title {
+  color: #000000;
+  @include main-font4();
 }
 
 @media (min-width: $tablet-portrait) {
 
+  .packages__items {
+    @include flexbox();
+    @include flex-wrap( wrap );
+    @include flex-direction();
+    @include align-items();
+    @include justify-content(flex-start);
+  }
+  .packages__item {
+    padding: 67px 15px 120px;
+    border-left: 1px solid #e8e9ed;
+    border-top: none;
+    width: 50%;
+    min-height: 451px;
+
+    &:nth-child(odd) {
+      border-left: none;
+    }
+
+  }
+  .packages__price {
+    font-size: 64px;
+    line-height: 64px;
+
+    span {
+      font-size: 28px;
+      line-height: 52px;
+    }
+
+  }
+  .packages__payments {
+    margin: 0 0 91px;
+  }
+  .packages__include-title {
+    padding: 0 0 0 90px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .packages__include-items {
+    padding: 0 0 0 90px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .packages__text {
+    font-size: 19px;
+    line-height: 22px;
+  }
 
 }
 @media (min-width: $tablet-landscape) {
 
+  .packages__items {
+    margin: -154px 0 30px;
+  }
 
 }

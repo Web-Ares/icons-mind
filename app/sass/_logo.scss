@@ -7,6 +7,8 @@
   height: 30px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  -webkit-transition: top .3s ease;
+  transition: top .3s ease;
 
   svg,
   img {
@@ -22,6 +24,39 @@
 }
 .logo__title {
   display: none;
+}
+.site_white {
+
+  .logo {
+
+    svg {
+      fill: #000
+    }
+
+  }
+
+}
+.site__header_fixed-white {
+
+  .logo {
+
+    svg {
+      fill: #000
+    }
+
+  }
+
+}
+.site__header_drop-menu {
+
+  .logo {
+
+    svg {
+      fill: #fff
+    }
+
+  }
+
 }
 
 @media (min-width: $tablet-portrait) {
@@ -44,12 +79,13 @@
 @media (min-width: $tablet-landscape) {
 
   .logo {
-    top: 37px;
+    top: 19px;
     left: 10px;
     width: 186px;
     height: 43px;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
 
 }
