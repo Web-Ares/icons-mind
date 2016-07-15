@@ -52,6 +52,7 @@
                             _header.addClass( 'site__header_drop-menu' );
 
                             siteScrollTop = _window.scrollTop();
+                            _header.removeClass('site__header_fixed-white');
 
                             setTimeout( function() {
 
@@ -88,7 +89,8 @@
 
                         if( _action ) {
                             _header.addClass('site__header_fixed-white');
-                        } else {
+                        }
+                        else {
                             _header.removeClass('site__header_fixed-white');
                         }
 
@@ -97,7 +99,8 @@
 
                         if( _action ) {
                             _header.addClass('site__header_fixed-white');
-                        } else {
+                        }
+                        else {
                             _header.removeClass('site__header_fixed-white');
                         }
 
