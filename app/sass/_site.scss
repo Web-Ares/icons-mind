@@ -282,11 +282,11 @@
   z-index: 1;
 }
 .site__title {
-  margin: 0 0 20px;
+  margin: 0 0 30px;
   @include main-font2();
   color: #fff;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 35px;
+  line-height: 45px;
   text-align: center;
 
   span {
@@ -294,39 +294,46 @@
   }
 }
 .site__title_2 {
-  margin: 0 0 20px;
+  margin: 0 0 40px;
   color: #000001;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 40px;
+  line-height: 45px;
 }
 .site__title_3 {
-
+  font-size: 40px;
+  line-height: 45px;
 }
 .site__title_4 {
   margin: 0;
+  font-size: 40px;
+  line-height: 45px;
 }
 .site__title_5 {
   margin: 0;
+  font-size: 40px;
+  line-height: 45px;
 }
 .site__title_6 {
   padding-top: 40px;
   background: url("../img/icoin-check1.png") no-repeat top center;
   background-size: 30px auto;
   color: #000;
+  font-size: 40px;
+  line-height: 45px;
 }
 .site__title_6-1 {
   background: none;
   padding: 0;
 }
 .site__subtitle {
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 25px;
 }
 .site__info {
   max-width: 700px;
-  margin: 0 auto 30px;
-  font-size: 16px;
-  line-height: 21px;
+  margin: 0 auto 40px;
+  font-size: 20px;
+  line-height: 25px;
   text-align: center;
 
   strong {
@@ -335,8 +342,8 @@
 
 }
 .site__info_small {
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 23px;
 }
 .site__center {
   position: relative;
@@ -353,20 +360,14 @@
 
   div {
     overflow: hidden;
-    display: inline-block;
-    vertical-align: top;
-    height: 44px;
     border-radius: 44px;
     border: 2px solid #111;
   }
 
 }
 .site__controls-link {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   padding: 11px 28px;
-  width: 169px;
-  margin: 0 -2px;
   background: #fff;
   color: #242a2f;
   font-size: 18px;
@@ -376,12 +377,6 @@
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
 
-  &:first-child {
-    text-align: right;
-  }
-  &:last-child {
-    text-align: left;
-  }
   &.active {
     background: #000001;
     color: #fff;
@@ -407,6 +402,29 @@
   .site {
 
   }
+  .site__controls {
+
+    div {
+      display: inline-block;
+      vertical-align: top;
+      height: 44px;
+    }
+
+  }
+  .site__controls-link {
+    display: inline-block;
+    vertical-align: top;
+    width: 169px;
+    margin: 0 -2px;
+
+    &:first-child {
+      text-align: right;
+    }
+    &:last-child {
+      text-align: left;
+    }
+
+  }
 }
 @media (min-width: $tablet-landscape) {
   .site {
@@ -427,11 +445,6 @@
         top: 37px;
       }
 
-      .site__header__menu-btn {
-        top: 48px;
-        right: 10px;
-      }
-
     }
 
   }
@@ -445,7 +458,7 @@
         padding: 24px 45px 0 10px;
       }
       .site__header__menu-btn {
-        top: 28px;
+        //top: 28px;
       }
       .logo {
         top: 18px;
@@ -471,8 +484,12 @@
     font-size: 18px
   }
   .site__header__menu-btn {
-    top: 36px;
-    right: 13px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    top: auto;
+    right: auto;
+    margin: 3px 0 0;
   }
   .site__footer {
     height: 140px;

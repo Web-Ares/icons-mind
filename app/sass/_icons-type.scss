@@ -1,6 +1,6 @@
 .icons-type {
   background: #fff;
-  padding: 60px 0;
+  padding: 75px 0;
   text-align: center;
 }
 .icons-type__inner {
@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 .icons-type__pic {
-  padding: 30px 0;
+  padding: 37px 0 61px;
 }
 
 @media (min-width: $tablet-landscape) {
@@ -17,8 +17,4 @@
   .icons-type {
     padding: 129px 0 41px;
   }
-  .icons-type__pic {
-    padding: 37px 0 61px;
-  }
-
 }

@@ -1,6 +1,6 @@
 .benefits {
   background: #f4f4f4;
-  padding: 60px 0;
+  padding: 75px 0;
   text-align: left;
 }
 .benefits__inner {
@@ -20,11 +20,11 @@
     vertical-align: top;
     width: 50%;
     padding: 0 13px;
-    margin: 0 0 20px;
+    margin: 0 0 40px;
     color: #000000;
     @include main-font3();
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 17px;
+    line-height: 21px;
     text-align: center;
 
     span {
@@ -51,8 +51,8 @@
 }
 .benefits__platform {
   margin: 0 0 30px;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 17px;
+  line-height: 21px;
 
   dl {
     padding: 0 0 0 46px;
@@ -82,9 +82,7 @@
 
     dd {
       margin: 0 0 20px;
-      font-size: 15px;
-      line-height: 18px;
-    }
+  }
 
   }
 
@@ -143,6 +141,7 @@
 
     li {
       width: 20%;
+      margin: 0 0 20px;
       font-size: 17px;
       line-height: 21px;
     }
@@ -152,6 +151,19 @@
     width: 100px;
     height: 100px;
     border-radius: 100px;
+  }
+  .benefits__platform {
+    font-size: 16px;
+    line-height: 19px;
+
+    .benefits__no-compromises {
+
+      dd {
+        font-size: 15px;
+        line-height: 18px;
+      }
+
+    }
   }
 
 }

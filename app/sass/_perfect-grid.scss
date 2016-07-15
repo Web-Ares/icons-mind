@@ -1,6 +1,6 @@
 .perfect-grid {
   background: #fff;
-  padding: 60px 0;
+  padding: 75px 0;
   text-align: center;
 }
 .perfect-grid__inner {
@@ -73,8 +73,8 @@
   width: 50%;
   margin: 0 0 20px;
   color: #999999;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 19px;
 
   img {
 
@@ -120,6 +120,11 @@
     .site__info {
       margin-bottom: 95px;
     }
+
+  }
+  .perfect-grid__example {
+    font-size: 14px;
+    line-height: 17px;
 
   }
 
