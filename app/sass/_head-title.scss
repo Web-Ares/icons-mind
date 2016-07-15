@@ -2,11 +2,6 @@
   position: relative;
   padding: 90px 0 50px;
   background: #000001;
-
-  .site__title {
-    max-width: 600px;
-  }
-
 }
 .site_purple .head-title {
   background-color: #78379d;
@@ -93,6 +88,11 @@
     @include justify-content(center);
     padding: 92px 0;
     min-height: 400px;
+
+    .site__title {
+      max-width: 600px;
+    }
+
   }
   .head-title_2 {
     min-height: 500px;
