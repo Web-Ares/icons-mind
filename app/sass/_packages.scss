@@ -64,19 +64,14 @@
   line-height: 20px;
   text-align: left;
 
-  dl {
+  div {
     margin: 0 0 6px;
     min-height: 15px;
     padding: 0 0 0 27px;
     background: url("../img/icoin-check.png") no-repeat left 2px;
     background-size: 16px 13px;
 
-    dt {
-      display: inline-block;
-      vertical-align: top;
-    }
-    dd {
-      display: inline;
+    span {
       @include main-font3();
     }
   }
