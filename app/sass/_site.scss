@@ -49,7 +49,7 @@
   -webkit-transition: border-bottom .2s ease, padding-top .2s ease, background-color .3s ease, transform .3s ease, height .3s ease;
 
   &.site__header_fixed-white {
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.07);
     background-color: #fff;
 
     .site__header__mobile-item {
@@ -88,8 +88,8 @@
 
   }
   &.site__header_hidden {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%)
+    -webkit-transform: translateY(-115%);
+    transform: translateY(-115%)
   }
   &.site__header_drop-menu {
 
