@@ -17,9 +17,60 @@
                 $( this ).parents( 'fieldset' ).addClass( 'novalid' );
             })
         });
+
+        $.each($('#mc-embedded-subscribe-form'), function () {
+            new MC($(this));
+        });
         
     } );
 
+    var MC = function ( obj ) {
+        var _obj = obj,
+            _thankpage = obj.data( 'thank' ),
+            _data_action = $('.promo_inner').data('action'),
+            _mail = '';
+        var _onEvents = function () {
+                _obj.on( 'submit' , function () {
+                    _mail = $( '#mce-EMAIL' ).val();
+                    if ( _mail.length < 4 ) {
+                        _setError();
+                    } else {
+                        $( '#mce-EMAIL' ).removeClass( 'mce_inline_error' );
+                        _send();
+                    }
+                    return false;
+                });
+            },
+            _setError = function () {
+                $( '#mce-EMAIL' ).addClass( 'mce_inline_error' );
+            },
+            _send = function () {
+                $.ajax({
+                    url: _data_action,
+                    data: { 'EMAIL': _mail, "action" : 'mchimp'},
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function (resp) {
+                        if ( resp.result == 'success' ) {
+                            _obj[ 0 ].reset( );
+                            window.location.href = _thankpage;
+                        } else {
+                            _setError();
+                        }
+                    },
+                    error: function () {
+                        _setError();
+                    }
+                });
+
+            },
+            init = function () {
+                _onEvents();
+            };
+
+        init()
+    };
+    
     var Menu = function ( obj ) {
         var _obj = obj,
             _btn = $( '.site__header__menu-btn' ),
