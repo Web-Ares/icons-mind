@@ -11,6 +11,13 @@
             new MessageHigh( $( this ) );
         } );
 
+        $(document).on( 'invalid.wpcf7' , function () {
+            $( '.contact-us__form' ).find( 'fieldset' ).removeClass( 'novalid' );
+            $( '.contact-us__form' ).find( '.wpcf7-not-valid-tip' ).each( function() {
+                $( this ).parents( 'fieldset' ).addClass( 'novalid' );
+            })
+        });
+        
     } );
 
     var Menu = function ( obj ) {
