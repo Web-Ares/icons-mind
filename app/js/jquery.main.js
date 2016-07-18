@@ -143,6 +143,7 @@
 
                         }
 
+
                     },
                     touchmove: function ( e ) {
 
