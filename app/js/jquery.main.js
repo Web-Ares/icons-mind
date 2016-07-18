@@ -35,17 +35,25 @@
 
                             _header.removeClass( 'site__header_drop-menu' );
 
+
                             _site.css( {
                                 'height': ''
                             } );
 
-                            _window.scrollTop( siteScrollTop );
+                            setTimeout( function() {
 
-                            _dom.css( {
-                                'overflow-y': ''
-                            } );
+                                if( _site.height() > _window.height() ) {
+                                    _dom.css( {
+                                        'overflow-y': ''
+                                    } );
+                                }
 
-                            $( _menuContent ).getNiceScroll().hide();
+                                _window.scrollTop( siteScrollTop );
+
+                                $( _menuContent ).getNiceScroll().hide();
+
+                            }, 10);
+
 
                         } else {
 
@@ -56,22 +64,28 @@
 
                             setTimeout( function() {
 
-                                _site.css( {
-                                    'height': '100%'
-                                } );
+                                if( _site.height() > _window.height() ) {
+                                    _dom.css( {
+                                        'overflow-y': 'scroll'
+                                    } );
+                                }
 
-                                _dom.css( {
-                                    'overflow-y': 'scroll'
-                                } );
+                                setTimeout( function() {
 
-                                _initContentScroll();
+                                    _site.css( {
+                                        'height': '100%'
+                                    } );
+
+                                    _initContentScroll();
+
+                                }, 10);
 
                                 setTimeout( function() {
 
                                     $( _menuContent ).getNiceScroll().show();
                                     $( _menuContent ).getNiceScroll().resize();
 
-                                }, 300);
+                                }, 310);
 
                             }, 300);
 
@@ -237,6 +251,5 @@
 
         _init();
     };
-
 
 } )();
