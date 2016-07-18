@@ -89,7 +89,6 @@
 
                             }, 300);
 
-
                         }
 
                         return false;
