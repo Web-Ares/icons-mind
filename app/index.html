@@ -313,7 +313,7 @@
                     </div>
 
                     <!-- hero__play -->
-                    <a href="#" class="hero__play"></a>
+                    <a href="#" class="hero__play popup__open" data-popup="video"></a>
                     <!-- hero__play -->
 
                     <!-- hero__icons -->
@@ -326,7 +326,7 @@
                 <!-- /hero__inner -->
 
                 <!-- hero__video -->
-                <div class="hero__video" style="background: url(img/home-cover.jpg)">
+                <div class="hero__video" style="background-image: url(img/home-cover.jpg)">
 
 
 
@@ -1369,6 +1369,7 @@
     </div>
     <!-- /site -->
 
+
     <!-- popup -->
     <div class="popup">
 
@@ -1376,7 +1377,21 @@
         <div class="popup__wrap">
 
             <!-- popup__content -->
-            <div class="popup__content popup__text">
+            <div class="popup__content popup__video">
+
+                <!-- video-popup__content -->
+                <div class="video-popup__content">
+
+                    <span class="popup__close">close</span>
+
+                    <div class="video-popup__frame">
+                        <div>
+                            <iframe src="https://player.vimeo.com/video/61327433?color=ff9933&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /video-popup__content -->
 
             </div>
             <!-- /popup__content -->
