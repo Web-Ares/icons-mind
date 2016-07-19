@@ -63,50 +63,43 @@
   }
 
   &__close {
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 20px;
-    line-height: 25px;
-    color: #fff;
-    @include main-font1();
-    text-align: center;
+    display: inline-block;
     margin: 0 0 40px;
+    position: relative;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    text-indent: -5000px;
     cursor: pointer;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
 
-    //position: absolute;
-    //top: 17px;
-    //width: 15px;
-    //height: 15px;
-    //right: 18px;
-    //text-indent: -5000px;
-    //cursor: pointer;
-    //
-    //&:after,
-    //&:before {
-    //  position: absolute;
-    //  top: 50%;
-    //  left: 0;
-    //  right: 0;
-    //  height: 3px;
-    //  background: $popup-close-back;
-    //  transform-origin: center;
-    //  content: '';
-    //}
-    //&:after{
-    //  transform: translateY( 50% ) rotate( 45deg );
-    //}
-    //&:before {
-    //  transform: translateY( 50% ) rotate( -45deg );
-    //}
-    //
-    //&:hover {
-    //  opacity: 0.8;
-    //}
-    //
-    //&:active {
-    //  background-position: 0 bottom;
-    //}
+    &:after,
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: $popup-close-back;
+      transform-origin: center;
+      content: '';
+    }
+    &:after{
+      transform: translateY( 50% ) rotate( 45deg );
+    }
+    &:before {
+      transform: translateY( 50% ) rotate( -45deg );
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      background-position: 0 bottom;
+    }
   }
 
   &__scrollbar-measure {
@@ -140,7 +133,7 @@
     right: 1px;
     bottom: 1px;
     left: 1px;
-    border: 1px solid #fff;
+    //border: 1px solid #fff;
     content: '';
     -webkit-transition: opacity .3s ease, visibility .3s ease;
     transition: opacity .3s ease, visibility .3s ease;
