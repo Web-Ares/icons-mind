@@ -16,14 +16,14 @@
   li {
     position: relative;
     margin: 0 0 9px;
-    padding: 1px 0 0 34px;
+    padding: 1px 0 0 0;
     font-size: 16px;
     line-height: 23px;
 
     &:before {
-      position: absolute;
-      top: 1px;
-      left: 0;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 3px 0 0;
       @include main-font4();
       counter-increment: list;
       content: "0"counter(list)'.' ;
