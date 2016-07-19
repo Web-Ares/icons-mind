@@ -47,6 +47,7 @@
                 return scrollBarWidth;
             },
             _hide = function(){
+
                 _obj.css( {
                     overflowY: 'hidden'
                 } );
@@ -58,6 +59,13 @@
                 _obj.removeClass( 'popup_opened' );
                 _obj.addClass( 'popup_hide' );
 
+                //setTimeout( function(){
+
+
+
+                //}, 500 );
+
+
                 _timer = setTimeout( function(){
 
                     _obj.css ({
@@ -65,7 +73,7 @@
                     });
 
                     _obj.removeClass( 'popup_hide' );
-                }, 300 );
+                }, 800 );
 
             },
             _init = function(){
