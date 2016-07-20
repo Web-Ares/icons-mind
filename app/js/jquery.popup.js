@@ -51,20 +51,20 @@
                 _obj.css( {
                     overflowY: 'hidden'
                 } );
-                _scrollConteiner.css( {
-                    overflowY: 'auto',
-                    paddingRight: 0
-                } );
+
+                setTimeout( function(){
+
+                    _scrollConteiner.css( {
+                        overflowY: 'auto',
+                        paddingRight: 0
+                    } );
+
+                }, 400 );
 
                 _obj.removeClass( 'popup_opened' );
                 _obj.addClass( 'popup_hide' );
 
-                //setTimeout( function(){
-
                 _stopVideo( $('.video-popup__frame iframe') );
-
-                //}, 500 );
-
 
                 _timer = setTimeout( function(){
 
@@ -118,10 +118,15 @@
             _show = function( className ){
                 _setPopupContent( className );
 
-                _scrollConteiner.css( {
-                    overflowY: 'hidden',
-                    paddingRight: _getScrollWidth()
-                } );
+                setTimeout( function(){
+
+                    _scrollConteiner.css( {
+                        overflowY: 'hidden',
+                        paddingRight: _getScrollWidth()
+                    } );
+
+                }, 400 );
+
                 _obj.addClass( 'popup_opened' );
                 _centerWrap();
 
