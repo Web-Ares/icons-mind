@@ -61,7 +61,7 @@
 
                 //setTimeout( function(){
 
-
+                _stopVideo( $('.video-popup__frame iframe') );
 
                 //}, 500 );
 
@@ -75,6 +75,11 @@
                     _obj.removeClass( 'popup_hide' );
                 }, 800 );
 
+            },
+            _stopVideo = function(player) {
+                var vidSrc = player.prop('src');
+                player.prop('src', '');
+                player.prop('src', vidSrc);
             },
             _init = function(){
                 _obj[ 0 ].obj = _self;
