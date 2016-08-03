@@ -9,7 +9,8 @@
   text-align: center;
   
   p {
-    margin: 0 0 40px;
+    margin: 0 auto 40px;
+    max-width: 430px;
     font-size: 22px;
     line-height: 27px;
   }
@@ -65,14 +66,37 @@
 
 
     p {
-      margin: 0 0 65px;
+      margin: 0 auto 65px;
       font-size: 28px;
       line-height: 35px;
     }
 
   }
   .thank-you_2 {
+    padding: 120px 0 0;
+
+    p {
+      margin: 0 auto 35px;
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop-full) {
+
+
+  .thank-you_2 {
     padding: 220px 0 0;
+
+    p {
+      margin: 0 auto 65px;
+      font-size: 28px;
+      line-height: 35px;
+    }
+
   }
 
 }

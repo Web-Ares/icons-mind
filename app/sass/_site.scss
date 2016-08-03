@@ -130,6 +130,11 @@
     }
 
   }
+  &.site__header_stick {
+    position: absolute;
+    -webkit-transform: none !important;
+    transform: none !important;
+  }
 
 }
 .site__header_black {
@@ -533,6 +538,9 @@
   .site__title_6-1 {
     background: none;
     padding: 0;
+    font-size: 54px;
+    line-height: 65px;
+
   }
   .site__subtitle {
     font-size: 26px;
@@ -559,4 +567,10 @@
 
   }
 }
+@media (min-width: $desktop-full) {
+  .site__title_6-1 {
+    font-size: 66px;
+    line-height: 70px;
 
+  }
+}
