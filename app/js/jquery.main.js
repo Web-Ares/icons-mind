@@ -284,7 +284,7 @@
     var MessageHigh = function ( obj ) {
 
         var _obj = obj,
-            _message = _obj.find( '.contact-us__form__message' ),
+            _message = _obj.find( 'textarea.contact-us__form__message' ),
             _messageText = _obj.find( '.message-field__text' ),
             _messageHeight = _obj.find( '.message-field__height' );
 
