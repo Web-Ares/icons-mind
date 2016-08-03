@@ -307,14 +307,45 @@
                 <!-- contact-us__form -->
                 <div class="contact-us__form">
 
-                    <form method="get" action="#">
+                    <!--<form method="get" action="#">-->
 
+                        <!--<fieldset>-->
+                            <!--<input type="text" name="contact-us__form__name" class="contact-us__form__name" placeholder="Full Name"/>-->
+                        <!--</fieldset>-->
+
+                        <!--<fieldset>-->
+                            <!--<input type="email" name="contact-us__form__email" class="contact-us__form__email" placeholder="Email Adress"/>-->
+                        <!--</fieldset>-->
+
+                        <!--<fieldset class="message-field">-->
+
+                            <!--<div class="message-field__text"></div>-->
+
+                            <!--<div class="message-field__height"></div>-->
+
+                            <!--<textarea name="contact-us__form__message" class="contact-us__form__message" placeholder="Message"></textarea>-->
+
+                        <!--</fieldset>-->
+
+                        <!--<button type="submit" name="form__send" class="btn btn_5"><span>Send</span></button>-->
+
+                    <!--</form>-->
+
+                    <form action="/get-in-touch/#wpcf7-f10-p105-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="10">
+                            <input type="hidden" name="_wpcf7_version" value="4.4">
+                            <input type="hidden" name="_wpcf7_locale" value="en_US">
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10-p105-o1">
+                            <input type="hidden" name="_wpnonce" value="8b2aaa69fa">
+                        </div>
                         <fieldset>
-                            <input type="text" name="contact-us__form__name" class="contact-us__form__name" placeholder="Full Name"/>
+
+                            <span class="wpcf7-form-control-wrap contact-us__form__name"><input type="text" name="contact-us__form__name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required contact-us__form__name" aria-required="true" aria-invalid="false" placeholder="Full Name"></span>
                         </fieldset>
 
                         <fieldset>
-                            <input type="email" name="contact-us__form__email" class="contact-us__form__email" placeholder="Email Adress"/>
+                            <span class="wpcf7-form-control-wrap contact-us__form__email"><input type="email" name="contact-us__form__email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email contact-us__form__email" aria-required="true" aria-invalid="false" placeholder="Email Address"></span>
                         </fieldset>
 
                         <fieldset class="message-field">
@@ -322,14 +353,11 @@
                             <div class="message-field__text"></div>
 
                             <div class="message-field__height"></div>
-
-                            <textarea name="contact-us__form__message" class="contact-us__form__message" placeholder="Message"></textarea>
+                            <span class="wpcf7-form-control-wrap contact-us__form__message"><textarea name="contact-us__form__message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea contact-us__form__message" aria-invalid="false" placeholder="Message"></textarea></span>
 
                         </fieldset>
 
-                        <button type="submit" name="form__send" class="btn btn_5"><span>Send</span></button>
-
-                    </form>
+                        <button type="submit" name="form__send" class="btn btn_5"><span>Send</span></button><div class="wpcf7-response-output wpcf7-display-none"></div></form>
 
                 </div>
                 <!-- /contact-us__form -->
