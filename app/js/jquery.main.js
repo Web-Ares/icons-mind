@@ -21,7 +21,7 @@
         $.each($('#mc-embedded-subscribe-form'), function () {
             new MC($(this));
         });
-
+        
     } );
 
     var MC = function ( obj ) {
