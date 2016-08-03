@@ -21,13 +21,16 @@
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
     content: '';
+    -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
+    -webkit-transition: opacity .3s ease 0.7s, visibility .3s ease 0.7s;
+    transition: opacity .3s ease 0.7s, visibility .3s ease 0.7s;
   }
 
   &:hover {
 
     &:after {
-      border-color: #000;
+      opacity: 0.75;
     }
 
   }

@@ -24,6 +24,8 @@
             _window = $( window ),
             _timer = setTimeout( function(){}, 1 );
 
+        var player;
+
         //private methods
         var _centerWrap = function(){
                 if ( _window.height() - ( _popupPadding * 2 ) - _wrap.height() > 0 ) {
@@ -64,8 +66,6 @@
                 _obj.removeClass( 'popup_opened' );
                 _obj.addClass( 'popup_hide' );
 
-                _stopVideo( $('.video-popup__frame iframe') );
-
                 _timer = setTimeout( function(){
 
                     _obj.css ({
@@ -75,11 +75,6 @@
                     _obj.removeClass( 'popup_hide' );
                 }, 800 );
 
-            },
-            _stopVideo = function(player) {
-                var vidSrc = player.prop('src');
-                player.prop('src', '');
-                player.prop('src', vidSrc);
             },
             _init = function(){
                 _obj[ 0 ].obj = _self;
@@ -129,6 +124,7 @@
 
                 _obj.addClass( 'popup_opened' );
                 _centerWrap();
+
 
             },
             _setPopupContent = function( className ){
