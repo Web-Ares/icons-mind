@@ -88,16 +88,13 @@
   width: 60px;
   height: 60px;
 
-  &:after {
+  .reviews__avatar-company {
     position: absolute;
     z-index: 1;
+    width: 35px;
+    height: auto;
     top: -4px;
     right: -22px;
-    width: 35px;
-    height: 35px;
-    background: url("../img/adoric-logo.png") no-repeat;
-    background-size: 35px;
-    content: '';
   }
 
   div {
