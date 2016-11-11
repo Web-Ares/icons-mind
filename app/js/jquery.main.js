@@ -21,6 +21,10 @@
         $.each($('#mc-embedded-subscribe-form'), function () {
             new MC($(this));
         });
+
+        $.each( $( '.packages' ), function () {
+            new TM( $( this ) );
+        } );
         
     } );
 
@@ -307,6 +311,34 @@
             };
 
         _init();
+    };
+
+    var TM = function (obj) {
+        var _obj = obj;
+        var _onEvents = function () {
+
+                $( '.paddle_button').on( 'click', function () {
+                 
+                    var product_id = $(this).data( 'product' );
+                    var product_name = $(this).data( 'product_name' );
+                    console.log(product_name); 
+                    // adoric.trigger('InitiateCheckout');
+
+                    dataLayer.push( {'event':'track-purchase-click', 'productid':product_id, 'productname':product_name } );
+                });
+
+            
+                $( '.pricing__license a' ).on( 'click', function () {
+                    dataLayer.push( {'event':'track-purchase-customize'} );
+                } );
+            },
+
+            init = function () {
+                window.dataLayer = window.dataLayer || [];
+                _onEvents();
+            };
+
+        init()
     };
 
 } )();
